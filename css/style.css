@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;          /* 禁止滚动条 */
+    background-color: #222;
+}
+
+#game-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* canvas 会保持 1200x800 的固定坐标，通过 CSS 缩放适配屏幕 */
+canvas {
+    display: block;
+    max-width: 100vw;
+    max-height: 100vh;
+    width: auto;
+    height: auto;
+    /* 保持清晰边缘 */
+    image-rendering: auto;
+}
